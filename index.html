@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gonzalo A. Burgos - CV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f7fa;
+      color: #333;
+    }
+    header {
+      background: #003366;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-top: 1rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h2 {
+      border-bottom: 2px solid #003366;
+      padding-bottom: 0.3rem;
+      color: #003366;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    .language-toggle {
+      margin-top: 1rem;
+    }
+    button {
+      padding: 0.5rem 1rem;
+      margin: 0.5rem;
+      background: #003366;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Gonzalo Andrés Burgos Fuentes</h1>
+  <img src="gonza1.png" alt="Foto de Gonzalo" class="profile-pic">
+  <p>Santiago, Chile | gburgos.work@gmail.com | +56 9 5171 8508</p>
+  <p><a href="https://yourwebsite.com" style="color:white;">yourwebsite.com</a> |
+     <a href="https://github.com/GonUchile" style="color:white;">GitHub</a> |
+     <a href="https://linkedin.com/in/fis-ing-gonzalo-burgos" style="color:white;">LinkedIn</a></p>
+  <div class="language-toggle">
+    <button onclick="switchLang('es')">Español</button>
+    <button onclick="switchLang('en')">English</button>
+  </div>
+</header>
+
+<div class="container">
+
+  <div id="es">
+    <h2>Resumen</h2>
+    <p>Ingeniero en Física con MSc. en Física y estudiante de MSc. en Astronomía, con experiencia en instrumentación astronómica y hardware de radiofrecuencia.</p>
+
+    <h2>Experiencia</h2>
+    <ul>
+      <li>Universidad de Chile - Desarrollo de radiotelescopio CHARTs (2024-presente)</li>
+      <li>IIT, UdeC - Radar en banda L con FPGA ZCU-208 (2023-2024)</li>
+      <li>CePIA - Backend para radiómetros 183 y 22 GHz, MMIC, FPGA (2017–2023)</li>
+    </ul>
+
+    <h2>Educación</h2>
+    <ul>
+      <li>MSc Astronomía, U. de Chile</li>
+      <li>MSc Física, U. de Concepción</li>
+      <li>Ingeniería en Física, U. de Concepción</li>
+    </ul>
+
+    <h2>Habilidades</h2>
+    <ul>
+      <li>MATLAB, Python, Verilog, C++, CUDA, Vivado, KiCad</li>
+      <li>Diseño de PCB, instrumentación RF, gestión de proyectos tecnológicos</li>
+    </ul>
+  </div>
+
+  <div id="en" class="hidden">
+    <h2>Summary</h2>
+    <p>Physicist Engineer with MSc in Physics and current MSc student in Astronomy, experienced in astronomical instrumentation and RF hardware.</p>
+
+    <h2>Experience</h2>
+    <ul>
+      <li>University of Chile - CHARTs radiotelescope development (2024–present)</li>
+      <li>IIT, UdeC - L-band radar on ZCU-208 FPGA (2023–2024)</li>
+      <li>CePIA - Backend for 183 & 22 GHz radiometers, MMIC, FPGA (2017–2023)</li>
+    </ul>
+
+    <h2>Education</h2>
+    <ul>
+      <li>MSc Astronomy, U. of Chile</li>
+      <li>MSc Physics, U. of Concepción</li>
+      <li>Engineering in Physics, U. of Concepción</li>
+    </ul>
+
+    <h2>Skills</h2>
+    <ul>
+      <li>MATLAB, Python, Verilog, C++, CUDA, Vivado, KiCad</li>
+      <li>PCB design, RF instrumentation, tech project management</li>
+    </ul>
+  </div>
+
+</div>
+
+<script>
+  function switchLang(lang) {
+    document.getElementById('es').classList.add('hidden');
+    document.getElementById('en').classList.add('hidden');
+    document.getElementById(lang).classList.remove('hidden');
+  }
+</script>
+
+</body>
+</html>
